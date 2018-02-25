@@ -37,12 +37,6 @@ body {
 }
 
 
-/* .container {
-    margin-top: 0px;
-    float: left;
-    width: 100%;
-} */
-
 h1 {
     font-family: 'blackjack', Arial, Helvetica, sans-serif;
     font-size: 7rem;
@@ -59,6 +53,19 @@ h2 {
     text-align: center;
     letter-spacing: -.05rem;
     color: #cc9999;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-family: 'blackjack', Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+    color: #cc9999;
+}
+
+h4 {
+    font-size: 1rem;
+    padding-bottom: .5rem;
+    word-wrap: break-word;
 }
 
 .jumbotron {
@@ -81,5 +88,5 @@ h2 {
 }
 
 .description {
-    padding-top: 15rem;
+    padding-top: 5rem;
 }
