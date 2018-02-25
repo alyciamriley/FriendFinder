@@ -4,14 +4,14 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-var friendArray = require("../data/friends");
+var friendArray = require("../app/data/friends");
 
 // ===============================================================================
 // ROUTING
 // ===============================================================================
 module.exports = function(app) {
-    app.get("/api/frienddata", function(req, res) {
-        res.json(friends);
+    app.get("/api/friends", function(req, res) {
+        res.json(friendArray);
     });
 
 
