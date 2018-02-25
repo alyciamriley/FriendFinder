@@ -108,7 +108,7 @@ h4 {
     line-height: -5 rem;
 }
 
-#surveyBtn {
+#surveyBtn, #submitBtn {
      background-color: #cc0033;
      padding: 1rem;
      margin-top: 0rem;
