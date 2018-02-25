@@ -85,8 +85,45 @@ h4 {
     padding-left: 0;
     padding-right: 0;
     overflow: hidden;
+    border-right: 1px dotted black;
 }
 
-.description {
-    padding-top: 5rem;
+#appIntroduction {
+    width: 70%;
+    background-color:#ff9999;
+    opacity: 0.5;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+    margin-top: 3rem;
+    margin-left: 5rem;
+    padding: 2rem;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.scriptFont {
+    font-family: 'blackjack', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    line-height: -5 rem;
+}
+
+#surveyBtn {
+     background-color: #cc0033;
+     padding: 1rem;
+     margin-top: 0rem;
+     border: 3px dotted black;
+     border-radius: 25px;
+     -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+#surveyBtn:hover {
+    background-color: #cc9999;
+    color: white;
+    
+}
+
+#johnnyJune {
+    font-size: 1.5rem;
 }
