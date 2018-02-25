@@ -1,0 +1,85 @@
+/* 
+------Colors----------
+Light purple: #666699;
+Dusty Pink: #cc9999;
+Salmon: #ff9999;
+Gray: #999999;
+Red: #cc0033;
+Pale Gray: #cccccc; 
+
+------Fonts----------
+*/
+@font-face {
+    font-family: 'airstreamregular';
+    src: url('Airstream-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'blackjack';
+    src: url('blackjack-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    max-width: 100%;
+    background-color:#666699;
+    box-sizing: border-box;
+}
+
+
+/* .container {
+    margin-top: 0px;
+    float: left;
+    width: 100%;
+} */
+
+.display-4 {
+    font-family: 'blackjack', Arial, Helvetica, sans-serif;
+    font-size: 7rem;
+    /* text-shadow: 2px 2px 4px #cc00338a; */
+    line-height: 2rem;
+    text-align: left; 
+    letter-spacing: -.25rem;
+    color:#000;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: -.05rem;
+    color: #cc9999;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 5rem;
+    text-align: left;
+    background-color:#666699;
+    margin-bottom: 0px;
+    margin-left: 0px;
+
+}
+
+#sidebar {
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.description {
+    padding-top: 15rem;
+}
