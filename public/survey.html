@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" type ="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -100,7 +101,7 @@
                       <br>
 
 
-                      <h3>Question 4</h3>
+                      <!-- <h3>Question 4</h3>
                   <h4>You rarely do something just out of sheer curiousity.</h4>
                   <select class="chosen-select" id="q4">
                         <option value="">Please select an option.</option>
@@ -199,35 +200,94 @@
                         <option value="5">5 (Strongly Agree)</option>
                       </select>
                       <br>
-                    </div>
+                    </div> -->
 
                 
                
               </form>
-              <a class="btn btn-primary btn-lg" id="submitBtn" href="/survey.html" role="button">Take Our Survey</a>
+              <a class="btn btn-primary btn-lg" id="submitBtn" href="/survey.html" role="button">Find your love!</a>
             </div>
+   
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
         </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
 
     </div>
+  </div>
 
 
-
-
-
-
-</body>
 
 <script type="text/javascript">
+//user clicks submit
+//answers are posted to array
 $("#submitBtn").on("click", function(event){
     event.preventDefault();
+    function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        $(".chosen-select").each(function() {
+
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
 
     var newFriend = {
-        name: $("nameInput").val().trim(),
-        photo: $("#photoUrl").val().trim()
-    };
+        name: $("#nameInput").val(),
+        photo: $("#photoUrl").val(),
+        scores:[
+         $("#q1").val(),
+         $("#q2").val(),
+         $("#q3").val(),
+        //  $("#q4").val(),
+        //  $("#q5").val(),
+        //  $("#q6").val(),
+        //  $("#q7").val(),
+        //  $("#q8").val(),
+        //  $("#q9").val(),
+        //  $("#q10").val()
+    ]
+    };    
+    console.log(newFriend);
+
+$.post("/api/friends", newFriend, function(data) {
+    if (data) {
+        alert ("thanks for filling out the survey!");
+    } else {
+        console.log("ok?");
+    }
+
 })
 
 
-</script>
 
+
+})
+
+
+
+</script>
+</body>
 </html>

@@ -3,7 +3,8 @@
 var friendArray = [
     {
       friendName: "Ahmed",
-      friendPhoto: "ahmed@example.com"
+      friendPhoto: "ahmed@example.com",
+      score: []
     
     }
   ];
