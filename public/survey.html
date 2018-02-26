@@ -2,16 +2,22 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Goin' Steady </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" type ="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Goin' Steady </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--bootstrap links-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!--stylesheets-->
+  <!-- <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css"> -->
 
 
 </head>
@@ -19,89 +25,91 @@
 <body>
 
 
-    <!-- first row -->
-    <div class="row">
-        <!-- first column in first row -->
-        <div class="col-lg-4" id="sidebar">
-            <img src="../images/2.png">
+  <!-- first row -->
+  <div class="row">
+    <!-- first column in first row -->
+    <div class="col-lg-4" id="sidebar">
+      <img src="../images/2.png">
+    </div>
+    <!-- second column in first row - contains rest of rows -->
+    <div class="col-lg-8">
+      <!-- row one contains one column -->
+      <div class="row">
+
+        <div class="jumbotron jumbotron-fluid" id="title-bar">
+          <div class="container">
+            <h1>Going Steady</h1>
+            <h2 class="slogan">Because your heart can't wait another day</h2>
+
+          </div>
+
         </div>
-        <!-- second column in first row - contains rest of rows -->
-        <div class="col-lg-8">
-            <!-- row one contains one column -->
-            <div class="row">
-
-                <div class="jumbotron jumbotron-fluid" id="title-bar">
-                    <div class="container">
-                        <h1>Going Steady</h1>
-                        <h2 class="slogan">Because your heart can't wait another day</h2>
-
-                    </div>
-
-                </div>
 
 
-            </div>
+      </div>
 
-            <div class="row description">
-                <div class="col-sm-6"> 
-
-
-               <form>
-                <div class="form-group">
-
-                        <label for="nameInput">Name</label>
-                        <input type="name" class="form-control" id="nameInput" placeholder="name">
-
-                        <label for="photoInput">Photo</label>
-                        <input type="photo" class="form-control" id="photoInput" placeholder="photo url">
+      <div class="row description">
+        <div class="col-sm-6">
 
 
-                 <h3>Question 1</h3>
-                  <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-                  <select class="chosen-select" id="q1">
-                        <option value="">Please select an option.</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                      </select>
-                      <br>
-                      <br>
-                      <br>
-                     
+          <form>
+            <div class="form-group">
 
-                      <h3>Question 2</h3>
-                      <h4>Generally speaking, you rely more on your experience than your imagination. </h4>
-                      <select class="chosen-select" id="q2">
-                            <option value="">Please select an option.</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                          </select>
-                          <br>
-                          <br>
-                          <br>
+              <label for="nameInput">Name</label>
+              <input type="name" class="form-control" id="nameInput" placeholder="name">
+
+              <label for="photoInput">Photo</label>
+              <input type="photo" class="form-control" id="photoInput" placeholder="photo url">
 
 
-                          <h3>Question 3</h3>
-                  <h4> <p>You find it easy to stay relaxed and focused even when there is some pressure.</p> </h4>
-                  <select class="chosen-select" id="q3">
-                        <option value="">Please select an option.</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                      </select>
-                      <br>
-                      <br>
-                      <br>
+              <h3>Question 1</h3>
+              <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+              <select class="chosen-select" id="q1">
+                <option value="">Please select an option.</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <br>
+              <br>
+              <br>
 
 
-                      <!-- <h3>Question 4</h3>
+              <h3>Question 2</h3>
+              <h4>Generally speaking, you rely more on your experience than your imagination. </h4>
+              <select class="chosen-select" id="q2">
+                <option value="">Please select an option.</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <br>
+              <br>
+              <br>
+
+
+              <h3>Question 3</h3>
+              <h4>
+                <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+              </h4>
+              <select class="chosen-select" id="q3">
+                <option value="">Please select an option.</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <br>
+              <br>
+              <br>
+
+
+              <!-- <h3>Question 4</h3>
                   <h4>You rarely do something just out of sheer curiousity.</h4>
                   <select class="chosen-select" id="q4">
                         <option value="">Please select an option.</option>
@@ -202,92 +210,86 @@
                       <br>
                     </div> -->
 
-                
-               
-              </form>
-              <a class="btn btn-primary btn-lg" id="submitBtn" data-toggle="modal" data-target="#exampleModal">Find your love!</a>
+
+
+          </form>
+          <a class="btn btn-primary btn-lg" id="submitBtn">Find your love!</a>
+          </div>
+
+          <!-- Modal -->
+          <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="modal-title">
+                    <strong>Best Match</strong>
+                  </h2>
+                </div>
+                <div class="modal-body">
+                  <h2 id="match-name"></h2>
+                  <!-- <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt=""> -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
             </div>
-   
-  <!-- Modal -->
-  <div id="results-modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title"><strong>Best Match</strong></h2>
-        </div>
-        <div class="modal-body">
-          <h2 id="match-name"></h2>
-          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
+          </div>
 
 
+          <script type="text/javascript">
+            //user clicks submit
+            //answers are posted to array
+            $("#submitBtn").on("click", function (event) {
+              event.preventDefault();
+              // function validateForm() {
+              //     var isValid = true;
+              //     $(".form-control").each(function() {
+              //       if ($(this).val() === "") {
+              //         isValid = false;
+              //       }
+              //     });
 
-<script type="text/javascript">
-//user clicks submit
-//answers are posted to array
-$("#submitBtn").on("click", function(event){
-    event.preventDefault();
-    function validateForm() {
-        var isValid = true;
-        $(".form-control").each(function() {
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
+              //     $(".chosen-select").each(function() {
 
-        $(".chosen-select").each(function() {
+              //       if ($(this).val() === "") {
+              //         isValid = false;
+              //       }
+              //     });
+              //     return isValid;
+              //   }
 
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
-        return isValid;
-      }
+              var newFriend = {
+                name: $("#nameInput").val(),
+                photo: $("#photoUrl").val(),
+                scores: [
+                  $("#q1").val(),
+                  $("#q2").val(),
+                  $("#q3").val(),
+                  //  $("#q4").val(),
+                  //  $("#q5").val(),
+                  //  $("#q6").val(),
+                  //  $("#q7").val(),
+                  //  $("#q8").val(),
+                  //  $("#q9").val(),
+                  //  $("#q10").val()
+                ]
+              };
 
-    var newFriend = {
-        name: $("#nameInput").val(),
-        photo: $("#photoUrl").val(),
-        scores:[
-         $("#q1").val(),
-         $("#q2").val(),
-         $("#q3").val(),
-        //  $("#q4").val(),
-        //  $("#q5").val(),
-        //  $("#q6").val(),
-        //  $("#q7").val(),
-        //  $("#q8").val(),
-        //  $("#q9").val(),
-        //  $("#q10").val()
-    ]
-    };    
-    console.log(newFriend);
+              $.post("/api/friends", newFriend, function (data) {
+                $("#results-modal").modal("toggle");
 
-$.post("/api/friends", newFriend, function(data) {
-    if (data) {
-        alert ("thanks for filling out the survey!");
-    } else {
-        console.log("ok?");
-    }
+              });
 
-})
+            });
 
 
 
-
-})
-
-
-
-</script>
+          </script>
 </body>
+
 </html>
