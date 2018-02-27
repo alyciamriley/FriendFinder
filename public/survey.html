@@ -7,10 +7,12 @@
   <title>Goin' Steady </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script src="https://code.jquery.com/jquery.js"></script>
   <!--bootstrap links-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ 
+
 
   <!--fonts-->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -247,22 +249,22 @@
         //answers are posted to array
         $("#submitBtn").on("click", function (event) {
           event.preventDefault();
-          // function validateForm() {
-          //     var isValid = true;
-          //     $(".form-control").each(function() {
-          //       if ($(this).val() === "") {
-          //         isValid = false;
-          //       }
-          //     });
+          function validateForm() {
+              var isValid = true;
+              $(".form-control").each(function() {
+                if ($(this).val() === "") {
+                  isValid = false;
+                }
+              });
 
-          //     $(".chosen-select").each(function() {
+              $(".chosen-select").each(function() {
 
-          //       if ($(this).val() === "") {
-          //         isValid = false;
-          //       }
-          //     });
-          //     return isValid;
-          //   }
+                if ($(this).val() === "") {
+                  isValid = false;
+                }
+              });
+              return isValid;
+            }
 
           var userInput = {
             name: $("#nameInput").val(),
@@ -278,7 +280,7 @@
               $("#q8").val(),
               $("#q9").val(),
               $("#q10").val()
-            ]
+          ]
           };
 
           $.post("/api/friends", userInput)
