@@ -16,8 +16,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
   <!--stylesheets-->
-  <!-- <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
 </head>
@@ -29,7 +29,7 @@
   <div class="row">
     <!-- first column in first row -->
     <div class="col-lg-4" id="sidebar">
-      <img src="../images/2.png">
+      <img src="images/2.png">
     </div>
     <!-- second column in first row - contains rest of rows -->
     <div class="col-lg-8">
@@ -247,22 +247,22 @@
         //answers are posted to array
         $("#submitBtn").on("click", function (event) {
           event.preventDefault();
-          function validateForm() {
-              var isValid = true;
-              $(".form-control").each(function() {
-                if ($(this).val() === "") {
-                  isValid = false;
-                }
-              });
+          // function validateForm() {
+          //     var isValid = true;
+          //     $(".form-control").each(function() {
+          //       if ($(this).val() === "") {
+          //         isValid = false;
+          //       }
+          //     });
 
-              $(".chosen-select").each(function() {
+          //     $(".chosen-select").each(function() {
 
-                if ($(this).val() === "") {
-                  isValid = false;
-                }
-              });
-              return isValid;
-            }
+          //       if ($(this).val() === "") {
+          //         isValid = false;
+          //       }
+          //     });
+          //     return isValid;
+          //   }
 
           var userInput = {
             name: $("#nameInput").val(),
