@@ -7,14 +7,6 @@ var bodyParser = require("body-parser");
 var path = require("path");
 
 
-function css(request, response) {
-    if (request.url === '..public/css/styles.css') {
-      response.writeHead(200, {'Content-type' : 'text/css'});
-      var fileContents = fs.readFileSync('.public/css/style.css', {encoding: 'utf8'});
-      response.write(fileContents);
-    }
-  }  
-
 //=========================================================================
 //EXPRESS CONFIGURATION
 //=========================================================================
@@ -26,18 +18,13 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public')); 
 
-// app.use(function (req, res) {
-//     res.setHeader('Content-Type', 'text/plain')
-//     res.write('you posted: \n')
-//     res.end(JSON.stringify(req.body, null, 2))
-// });
-
 //=========================================================================
 //ROUTER
 //=========================================================================
 
-require(path.join(__dirname, './routes/apiRoutes'))(app);
-require(path.join(__dirname,'./routes/htmlRoutes'))(app);
+
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
 //=========================================================================
 //LISTENER

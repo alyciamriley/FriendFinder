@@ -19,6 +19,7 @@ var friendsArray = [
 			'5'
 		]
   },
+  
 {
     name: "James Dean",
     photo: "https://drive.google.com/open?id=1LHW4WW6iTthwcxqT-6-A4H3SF2v-0EyZ",
