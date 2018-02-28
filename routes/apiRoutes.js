@@ -1,10 +1,6 @@
-// ===============================================================================
-// LOAD DATA
-// We are linking our routes to a series of "data" sources.
-// These data sources hold arrays of information on table-data, waitinglist, etc.
-// ===============================================================================
+
 var path = require('path');
-var friendsArray = require("../app/data/friends");
+var friends = require("../app/data/friends.js");
 
 
 // ===============================================================================
@@ -21,7 +17,7 @@ module.exports = function(app) {
 
   app.post("/api/friends", function(req, res) {
     var userInput = req.body;
-    console.log("user input: " + JSON.stringify(userInput));
+    console.log("req " + JSON.stringify(userInput));
 
     var userResponses = userInput.scores;
     console.log("user responses: " + userResponses);
