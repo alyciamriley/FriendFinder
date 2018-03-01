@@ -56,16 +56,22 @@ h2 {
 }
 
 h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'blackjack', Arial, Helvetica, sans-serif;
-    line-height: 2rem;
+    line-height: 3rem;
     color: #cc9999;
+    
 }
 
 h4 {
     font-size: 1rem;
     padding-bottom: .5rem;
     word-wrap: break-word;
+}
+
+h5 {
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
 
 .jumbotron {
@@ -126,4 +132,14 @@ h4 {
 
 #johnnyJune {
     font-size: 1.5rem;
+}
+
+.form-group {
+    margin-top: 1rem;
+}
+
+#questionContainer {
+    height: 50rem;
+    margin-left: 4rem;  
+
 }
