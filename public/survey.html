@@ -220,7 +220,7 @@
             </div>
             <div class="modal-body">
               <h2 id="userMatch"></h2>
-              <img id="userMatchImage" src="">
+              <img id="userMatchImage" src="" width="300" height="auto">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -261,7 +261,8 @@
               $('#userMatch').html(data.matchName);
               $('#userMatchImage').attr("src", data.matchImage);
               $("#results-modal").modal("toggle");
-
+              
+              console.log(data.matchImage);
             });
 
         });

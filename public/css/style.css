@@ -143,3 +143,8 @@ h5 {
     margin-left: 4rem;  
 
 }
+
+#userMatchImage  {
+    align-content: center;
+    border-radius: 2px; 
+}
