@@ -53,6 +53,7 @@ h2 {
     text-align: center;
     letter-spacing: -.05rem;
     color: #cc9999;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.384);
 }
 
 h3 {
@@ -60,6 +61,7 @@ h3 {
     font-family: 'blackjack', Arial, Helvetica, sans-serif;
     line-height: 3rem;
     color: #cc9999;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.384);
     
 }
 
@@ -96,7 +98,7 @@ h5 {
 
 #appIntroduction {
     width: 70%;
-    background-color:#ff9999;
+    background-color:#E598A1;
     opacity: 0.5;
     filter: alpha(opacity=30); /* For IE8 and earlier */
     margin-top: 3rem;
@@ -114,17 +116,28 @@ h5 {
     line-height: -5 rem;
 }
 
-#surveyBtn, #submitBtn {
+#surveyBtn {
      background-color: #cc0033;
      padding: 1rem;
      margin-top: 0rem;
      border: 3px dotted black;
-     border-radius: 25px;
+     border-radius: 5px;
      -webkit-transition-duration: 0.1s; /* Safari */
     transition-duration: 0.2s;
 }
 
-#surveyBtn:hover {
+#submitBtn {
+    background-color: #BB557E;
+    padding: 1rem;
+    margin-top: 0rem;
+    border: 3px dotted black;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.1s; /* Safari */
+   transition-duration: 0.2s;
+
+}
+
+#surveyBtn:hover , #submitBtn:hover{
     background-color: #cc9999;
     color: white;
     
