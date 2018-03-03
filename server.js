@@ -23,8 +23,8 @@ app.use(express.static(__dirname + '/public'));
 //=========================================================================
 
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require(path.join(__dirname,"./routes/apiRoutes"))(app);
+require(path.join(__dirname,"./routes/htmlRoutes"))(app);
 
 //=========================================================================
 //LISTENER
