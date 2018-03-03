@@ -158,6 +158,8 @@ h5 {
 }
 
 #userMatchImage  {
-    align-content: center;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
     border-radius: 2px; 
 }
