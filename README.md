@@ -17,7 +17,7 @@ Play here: https://going-steady.herokuapp.com/
 
 ## Screenshots
 
-![Main](public/assets/images/screenshot.PNG)
+![Main](public/images/screenshot.PNG)
 
 
 ## Built With
