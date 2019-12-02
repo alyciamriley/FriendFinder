@@ -1,6 +1,7 @@
   $.ajaxSettings.traditional = true;
 
   $("#submitBtn").on("click", function (event) {
+      console.log("this was clicked")
       event.preventDefault();
 
       // Gather user input
@@ -26,6 +27,7 @@
               $('#userMatch').html(data.matchName);
               $('#userMatchImage').attr("src", data.matchImage);
               $("#results-modal").modal("toggle");
+              console.log(userInput);
           });
 
   });
