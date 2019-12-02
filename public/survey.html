@@ -10,6 +10,7 @@
   <title>Goin' Steady </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="app.js"></script>
 
   <!--bootstrap links-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -26,36 +27,20 @@
 </head>
 
 <body>
-
-  <div class="row">
-    <!--Sidebar-->
-    <div class="col-lg-4" id="sidebar">
-      <img src="images/2.png" alt="sidebar image">
-    </div>
-    <div class="col-lg-8">
-      <div class="row">
-
-        <!--Titlebar-->
-        <div class="jumbotron jumbotron-fluid" id="title-bar">
-          <div class="container">
-            <h1>Going Steady</h1>
-            <h2 class="slogan">Because your heart can't wait another day</h2>
-          </div>
-        </div>
+  <div class="main-container">
+    <header id="header" class="title-bar">
+      <img src="images/heart.png" class="heart-image">
+      <div class="title">
+        <h1>Goin' Steady</h1><br>
+        <h2>Because your heart can't wait another day.</h2>
       </div>
-    </div>
-
-    <div class="col-lg-6">
-
-      <br>
-      <br>
+    </header>
+    <div class="secondary-container">
       <div id="questionContainer">
         <form>
           <div class="form-group">
-
             <label for="nameInput"></label>
             <input type="name" class="form-control" id="nameInput" placeholder="name">
-
             <label for="photoInput"></label>
             <input type="photo" class="form-control" id="photoInput" placeholder="photo url">
             <br>
@@ -66,7 +51,6 @@
               <div class="input-field col s12">
                 <h3>Question 1</h3>
                 <h5>Your mind is always contemplating the next awkward joke you are going to make.</h5>
-
                 <br>
                 <select id="q1">
                   <option value="" disabled selected>Choose your option</option>
@@ -178,7 +162,8 @@
 
               <div class="input-field col s12">
                 <h3>Question 8</h3>
-                <h5>There are two kinds of people in this world: Those who like Neil Diamond and those who don't.</h5>
+                <h5>There are two kinds of people in this world: Those who like Neil Diamond and those who don't.
+                </h5>
                 <br>
                 <select id="q8">
                   <option value="" disabled selected>Choose your option</option>
@@ -226,8 +211,6 @@
             <br>
           </div>
 
-
-
         </form>
         <a class="btn btn-primary btn-lg" id="submitBtn">Find your love!</a>
       </div>
@@ -252,48 +235,12 @@
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
-
         </div>
       </div>
+    </div>
 
 
-      <script type="text/javascript">
-        $.ajaxSettings.traditional = true;
-        //user clicks submit
-        //answers are posted to array;
-        $("#submitBtn").on("click", function (event) {
-          event.preventDefault();
-
-          // Gather user input
-          var userInput = {
-            name: $('#nameInput').val(),
-            photo: $('#photoInput').val(),
-            scores: [
-              $('#q1').val(),
-              $('#q2').val(),
-              $('#q3').val(),
-              $('#q4').val(),
-              $('#q5').val(),
-              $('#q6').val(),
-              $('#q7').val(),
-              $('#q8').val(),
-              $('#q9').val(),
-              $('#q10').val()
-            ]
-          };
-
-          $.post("/api/friends", userInput)
-            .done(function (data) {
-              $('#userMatch').html(data.matchName);
-              $('#userMatchImage').attr("src", data.matchImage);
-              $("#results-modal").modal("toggle");
-            });
-
-        });
-
-
-
-      </script>
+  </div>
 </body>
 
 </html>

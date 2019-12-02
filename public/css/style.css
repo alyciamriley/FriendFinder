@@ -33,83 +33,53 @@ Pale Gray: #cccccc;
 
 body {
     font-family: 'Lato', sans-serif;
+    display: flex;
     max-width: 100%;
-    background-color:#aaaac9;
-    box-sizing: border-box;
+    margin: 25px;
 }
 
 
 h1 {
     font-family: 'blackjack', Arial, Helvetica, sans-serif;
-    font-size: 7rem;
-    line-height: 2rem;
-    text-align: left; 
-    letter-spacing: -.25rem;
     color:#000;
+    font-size: 100px;
+    align-self: center; 
 }
 
 h2 {
-    font-size: 1.5rem;
     font-weight: bolder;
+    font-size: 25px;
     text-align: center;
     letter-spacing: -.05rem;
-    color: #cc9999;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.384);
+    color: #000;
 }
 
-h3 {
-    font-size: 2rem;
-    font-family: 'blackjack', Arial, Helvetica, sans-serif;
-    line-height: 3rem;
-    color: #cc9999;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.384);
-    
-}
 
-h4 {
-    font-size: 1rem;
-    padding-bottom: .5rem;
-    word-wrap: break-word;
+.main-container {
+    display: flex;
+    flex-direction: column;
 }
-
-h5 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-}
-
 /* ------TitleBar------ */
-.jumbotron {
+.title-bar {
+    display: flex;
+    height: 250px;
     width: 100%;
-    height: 5rem;
-    text-align: left;
-    background-color:#aaaac9;
-    margin-bottom: 0px;
-    margin-left: 0px;
-
 }
 
-/* ------Sidebar------ */
+.heart-image {
+    height: auto;
+    width: 235px;
+}
 
-#sidebar {
-    height: 100%;
-    margin-left: 0;
-    margin-right: 0px;
-    padding-left: 0;
-    padding-right: 0;
-    overflow: hidden;
-    border-right: 1px dotted black;
+.title {
+    align-self: center;
 }
 
 
 /* ------Main Content------ */
-#appIntroduction {
+.app-introduction {
     width: 70%;
-    background-color:#E598A1;
     opacity: 0.5;
-    filter: alpha(opacity=30); /* For IE8 and earlier */
-    margin-top: 3rem;
-    margin-left: 5rem;
-    padding: 2rem;
     border-radius: 25px;
     text-align: center;
     font-weight: 700;
