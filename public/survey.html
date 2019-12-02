@@ -11,8 +11,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="app.js"></script>
-  <script src="https://code.jquery.com/jquery.js"></script></script>
-
 
   <!--bootstrap links-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -45,16 +43,13 @@
             <input type="name" class="form-control" id="nameInput" placeholder="name">
             <label for="photoInput"></label>
             <input type="photo" class="form-control" id="photoInput" placeholder="photo url">
-            <br>
 
             <!-- Survey Questions -->
-
-            <div class="col-lg-6">
-              <div class="input-field col s12">
+            <div class="question-container">
+              <div class="question">
                 <h3>Question 1</h3>
                 <h5>Your mind is always contemplating the next awkward joke you are going to make.</h5>
-                <br>
-                <select id="q1">
+                <select id="q1" class="dropdown">
                   <option value="" disabled selected>Choose your option</option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -63,14 +58,11 @@
                   <option value="5">5 (Strongly Agree)</option>
                 </select>
               </div>
-              <br>
-              <br>
 
-              <div class="input-field col s12">
+              <div class="question">
                 <h3>Question 2</h3>
                 <h5>Generally speaking, cats are superior to dogs.</h5>
-                <br>
-                <select id="q2">
+                <select id="q2" class="dropdown">
                   <option value="" disabled selected>Choose your option</option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -79,14 +71,11 @@
                   <option value="5">5 (Strongly Agree)</option>
                 </select>
               </div>
-              <br>
-              <br>
 
-              <div class="input-field col s12">
+              <div class="question">
                 <h3>Question 3</h3>
                 <h5>You find it easy to stay relaxed and focused when you have taken your full dose of ritalin.</h5>
-                <br>
-                <select id="q3">
+                <select id="q3" class="dropdown">
                   <option value="" disabled selected>Choose your option</option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -95,14 +84,11 @@
                   <option value="5">5 (Strongly Agree)</option>
                 </select>
               </div>
-              <br>
-              <br>
 
-              <div class="input-field col s12">
+              <div class="question" class="dropdown">
                 <h3>Question 4</h3>
                 <h5>You find it easy to stay relaxed and focused when you have taken your full dose of ritalin.</h5>
                 <select id="q4">
-                  <br>
                   <option value="" disabled selected>Choose your option</option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -111,14 +97,10 @@
                   <option value="5">5 (Strongly Agree)</option>
                 </select>
               </div>
-              <br>
-              <br>
-
-              <div class="input-field col s12">
+              <div class="question">
                 <h3>Question 5</h3>
                 <h5>People are scary.</h5>
-                <br>
-                <select id="q5">
+                <select id="q5" class="dropdown">
                   <option value="" disabled selected>Choose your option</option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -127,14 +109,11 @@
                   <option value="5">5 (Strongly Agree)</option>
                 </select>
               </div>
-            </div>
-            <div class="col-lg-6">
 
-              <div class="input-field col s12">
+              <div class="question">
                 <h3>Question 6</h3>
                 <h5>It is often difficult for you change out of stretchy pants.</h5>
-                <br>
-                <select id="q6">
+                <select id="q6" class="dropdown">
                   <option value="" disabled selected>Choose your option</option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -143,14 +122,11 @@
                   <option value="5">5 (Strongly Agree)</option>
                 </select>
               </div>
-              <br>
-              <br>
 
-              <div class="input-field col s12">
+              <div class="question">
                 <h3>Question 7</h3>
                 <h5>In a discussion, you are not afraid to talk about your favorite serial killer.</h5>
-                <br>
-                <select id="q7">
+                <select id="q7" class="dropdown">
                   <option value="" disabled selected>Choose your option</option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -159,15 +135,12 @@
                   <option value="5">5 (Strongly Agree)</option>
                 </select>
               </div>
-              <br>
-              <br>
 
-              <div class="input-field col s12">
+              <div class="question">
                 <h3>Question 8</h3>
                 <h5>There are two kinds of people in this world: Those who like Neil Diamond and those who don't.
                 </h5>
-                <br>
-                <select id="q8">
+                <select id="q8" class="dropdown">
                   <option value="" disabled selected>Choose your option</option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -176,14 +149,12 @@
                   <option value="5">5 (Strongly Agree)</option>
                 </select>
               </div>
-              <br>
-              <br>
 
-              <div class="input-field col s12">
+
+              <div class="question">
                 <h3>Question 9</h3>
                 <h5>You feel more energetic after drinking an entire pot of coffee.</h5>
-                <br>
-                <select id="q9">
+                <select id="q9" class="dropdown">
                   <option value="" disabled selected>Choose your option</option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -192,14 +163,12 @@
                   <option value="5">5 (Strongly Agree)</option>
                 </select>
               </div>
-              <br>
-              <br>
 
-              <div class="input-field col s12">
+
+              <div class="question">
                 <h3>Question 10</h3>
                 <h5>You rarely get carried away by fantasies of having a room full of trampolines.</h5>
-                <br>
-                <select id="q10">
+                <select id="q10" class="dropdown">
                   <option value="" disabled selected>Choose your option</option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -209,15 +178,12 @@
                 </select>
               </div>
             </div>
-            <br>
-            <br>
           </div>
-
         </form>
-        <a class="btn btn-primary btn-lg" id="submitBtn">Find your love!</a>
+        <a class="btn" id="submitBtn">Find your love!</a>
       </div>
 
-      <!-- Modal -->
+ <!-- Modal -->
       <div id="results-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
@@ -237,11 +203,12 @@
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
+
         </div>
       </div>
+      </div>
     </div>
-
-
+    </div>
   </div>
 </body>
 

@@ -4,8 +4,8 @@ var friends = require("../app/data/friends.js");
 // ===============================================================================
 // ROUTING
 // ===============================================================================
-module.exports = function(app) {
-  app.get("/api/friends", function(req, res) {
+module.exports = function (app) {
+  app.get("/api/friends", function (req, res) {
     res.json(friends);
   });
 
@@ -13,21 +13,21 @@ module.exports = function(app) {
   // MATH!!
   // ===============================================================================
   //posting to the friends api on the friends.js file
-  app.post("/api/friends", function(req, res) {
+  app.post("/api/friends", function (req, res) {
     var userInput = req.body;
     var userResponses = userInput.scores;
-    var matchName = ""; 
+    var matchName = "";
     var matchImage = "";
     var totalDifference = 10000;
 
     for (var i = 0; i < friends.length; i++) {
-       var diff = 0;
+      var diff = 0;
 
 
       for (var j = 0; j < userResponses.length; j++) {
         diff += Math.abs(friends[i].scores[j] - userResponses[j]);
       }
-  
+
 
       if (diff < totalDifference) {
         totalDifference = diff;
@@ -40,6 +40,10 @@ module.exports = function(app) {
     friends.push(userInput);
 
     //send appropriate response
-    res.json({ status: "ok", matchName: matchName, matchImage: matchImage });
+    res.json({
+      status: "ok",
+      matchName: matchName,
+      matchImage: matchImage
+    });
   });
 };

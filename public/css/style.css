@@ -7,6 +7,13 @@ Gray: #999999;
 Red: #cc0033;
 Pale Gray: #cccccc; 
 
+Red: #cc144a;
+Orange: #e95a3c;
+teal: #7cc4b6;
+lt pink: #f99a94;
+mauve: #b7706c;
+blue: #497574;
+
 ------Fonts----------
 */
 @font-face {
@@ -34,56 +41,89 @@ Pale Gray: #cccccc;
 body {
     font-family: 'Lato', sans-serif;
     display: flex;
-    max-width: 100%;
     margin: 25px;
 }
 
 
 h1 {
     font-family: 'blackjack', Arial, Helvetica, sans-serif;
-    color:#000;
+    color:#cc144a;
     font-size: 100px;
     align-self: center; 
 }
 
 h2 {
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
+    letter-spacing: -.05rem;
+    color: #b7706c;
+    position: relative;
+    top: -40px;
+    left: -35px;
+}
+
+h3 {
+    font-weight: bolder;
+    font-size: 18px;
     letter-spacing: -.05rem;
     color: #000;
 }
 
-
 .main-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
+
 /* ------TitleBar------ */
 .title-bar {
     display: flex;
     height: 250px;
-    width: 100%;
+    width: 60%;
+    margin: auto;
 }
 
 .heart-image {
     height: auto;
     width: 235px;
+    opacity: .5;
 }
 
 .title {
     align-self: center;
+    position: relative;
+    width: 100%;
 }
 
+#nameInput, #photoInput {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#photoInput {
+    margin-bottom: 25px;
+}
+
+.question * {
+    margin: 5px;
+}
+
+.dropdown {
+    margin-bottom: 15px;
+}
 
 /* ------Main Content------ */
 .app-introduction {
-    width: 70%;
-    opacity: 0.5;
+    opacity: 0.9;
     border-radius: 25px;
     text-align: center;
+    color: #497574;
     font-weight: 700;
+}
 
+p.description {
+    margin-bottom: 25px;
 }
 
 .scriptFont {
@@ -97,33 +137,34 @@ h2 {
     font-size: 1.5rem;
 }
 
+.question-container {
+    column-count: 2;
+}
 
 /* ------Buttons------ */
-#surveyBtn {
-     background-color: #cc0033;
-     padding: 1rem;
-     margin-top: 0rem;
-     border: 3px dotted black;
-     border-radius: 5px;
-     -webkit-transition-duration: 0.1s; /* Safari */
-    transition-duration: 0.2s;
-}
 
-#submitBtn {
-    background-color: #BB557E;
+a.btn {
+    background-color: #b7706c;
+    color: #FFFFFF;
+    font-weight: bold;
     padding: 1rem;
     margin-top: 0rem;
-    border: 3px dotted black;
     border-radius: 5px;
-    -webkit-transition-duration: 0.1s; /* Safari */
-   transition-duration: 0.2s;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.2s;
 
 }
 
-#surveyBtn:hover , #submitBtn:hover{
+.btn:hover{
     background-color: #cc9999;
     color: white;
     
+}
+
+a#submitBtn {
+    width: fit-content;
+    align-self: flex-end;
+    margin-top: 25px;
 }
 
 
@@ -133,8 +174,8 @@ h2 {
 }
 
 #questionContainer {
-    height: 50rem;
-    margin-left: 4rem;  
+    display: flex;
+    flex-direction: column;
 
 }
 
