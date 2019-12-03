@@ -47,9 +47,9 @@ body {
 
 h1 {
     font-family: 'blackjack', Arial, Helvetica, sans-serif;
-    color:#cc144a;
+    color: #cc144a;
     font-size: 100px;
-    align-self: center; 
+    align-self: center;
 }
 
 h2 {
@@ -96,7 +96,8 @@ h3 {
     width: 100%;
 }
 
-#nameInput, #photoInput {
+#nameInput,
+#photoInput {
     width: 100%;
     margin-bottom: 10px;
 }
@@ -155,10 +156,10 @@ a.btn {
 
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #cc9999;
     color: white;
-    
+
 }
 
 a#submitBtn {
@@ -176,13 +177,147 @@ a#submitBtn {
 #questionContainer {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
 
 }
 
 /* ------Modal------ */
-#userMatchImage  {
+#userMatchImage {
     margin-top: 2rem;
     margin-right: 3rem;
     margin-left: 3rem;
-    border-radius: 2px; 
+    border-radius: 2px;
+}
+
+/* 
+Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 16px;
+        left: -75px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .title-bar {
+        height: 125px;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .heart-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .scriptFont {
+        font-size: 30px;
+    }
+
+    p.description {
+        margin-bottom: 5px;
+    }
+
+    .form-group {
+        margin-top: 0;
+    }
+
+    .question * {
+        font-size: 90%;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 18px;
+            top: -34px;
+            left: -128px;
+        }
+
+        h3 {
+            font-size: 14px;
+        }
+
+        .title-bar {
+            height: 125px;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 35px;
+        }
+
+        .heart-image {
+            height: 150px;
+            width: 150px;
+        }
+
+        .scriptFont {
+            font-size: 30px;
+        }
+
+        p.description {
+            margin-bottom: 5px;
+        }
+
+        .question * {
+            font-size: 90%;
+        }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 30px;
+        top: -25px;
+    }
+    
+    h3 {
+        font-size: 14px;
+    }
+    .title-bar {
+        height: 125px;
+        width: 100%;
+    }
+
+     .heart-image {
+         height: 175px;
+         width: 175px;
+     }
+
+     .form-group {
+         margin-top: 40px;
+     }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    h2 {
+        left: -215px;
+    }
+    .title-bar {
+        width: 100%;
+    }
 }
